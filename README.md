@@ -18,6 +18,8 @@ This repository contains solutions to various LeetCode problems categorized by t
 To get started with Daily_Leetcoding, follow these steps:
 
 1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/arhamansari11/Machine_Learning.git
 
 ## LeetSync Integration
 
