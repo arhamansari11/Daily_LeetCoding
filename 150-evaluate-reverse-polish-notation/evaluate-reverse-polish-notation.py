@@ -21,4 +21,5 @@ class Solution:
                 stack.append(int(op2 / op1))
             else:
                 stack.append(int(i))
+            
         return stack[0]
