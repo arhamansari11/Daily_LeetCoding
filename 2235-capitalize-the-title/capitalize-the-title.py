@@ -1,7 +1,6 @@
 class Solution:
     def capitalizeTitle(self, title: str) -> str:
         string = ""
-
         x = title.split()
 
         for i in x:
@@ -9,5 +8,5 @@ class Solution:
                 string = string + i.title() + " "
             else:
                 string = string + i.lower() + " "
-            
+
         return string.rstrip()
