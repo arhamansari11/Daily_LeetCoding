@@ -1,12 +1,12 @@
 class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
 
-        word = set(word)
+        set1 = set(word)
         count = 0
-
-        for i in word:
+        for i in set1:
             if i.lower() == i:
-                if i.upper() in word:
+                if i.upper() in set1:
                     count += 1
-        
+
         return count
+
