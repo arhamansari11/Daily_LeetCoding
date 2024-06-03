@@ -1,8 +1,10 @@
 class Solution:
     def maximumWealth(self, nums: List[List[int]]) -> int:
-        newarr = []
+        result = []
+
         for i in range(len(nums)):
-            plus = sum(nums[i])
-            newarr.append(plus)
-        maximum = max(newarr)
+            add = sum(nums[i])
+            result.append(add)
+
+        maximum = max(result)
         return maximum
