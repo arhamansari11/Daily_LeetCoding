@@ -5,4 +5,5 @@ class Solution:
             if mountain[i] > mountain[i-1] and mountain[i] > mountain[i+1]:
                 arr.append(i)
 
+        
         return arr
