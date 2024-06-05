@@ -5,5 +5,4 @@ class Solution:
             if x in words[i]:
                 arr.append(i)
 
-        
         return arr
