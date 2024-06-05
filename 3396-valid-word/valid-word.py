@@ -5,15 +5,15 @@ class Solution:
         
         vowels = "aeiouAEIOU"
         has_vowel = False
-        has_consonant = False
-        
+        has_constant = False
+
         for char in word:
             if char.isalpha() or char.isdigit():
                 if char in vowels:
                     has_vowel = True
                 elif char.isalpha():
-                    has_consonant = True
+                    has_constant = True
             else:
                 return False
         
-        return has_vowel and has_consonant
+        return has_vowel and has_constant
