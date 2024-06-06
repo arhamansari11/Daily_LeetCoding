@@ -2,9 +2,9 @@ class Solution:
     def findMaxK(self, nums: List[int]) -> int:
         maximum = max(nums)
 
-        while True:
+        for i in range(len(nums)):
             if -maximum in nums:
-                break
+                return maximum
             else:
                 nums.remove(maximum)
 
