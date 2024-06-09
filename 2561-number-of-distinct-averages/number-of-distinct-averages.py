@@ -1,12 +1,13 @@
 class Solution:
     def distinctAverages(self, nums: List[int]) -> int:
         arr = []
-        while len(nums) >= 2:
-           a = min(nums)
-           b = max(nums)
-           average = (a + b)/2
-           arr.append(average)
-           nums.remove(a)
-           nums.remove(b)
 
+        for _ in range (len(nums) // 2):
+            a = max(nums)
+            b = min(nums)
+            avg = (a+b) / 2
+            arr.append(avg)
+            nums.remove(a)
+            nums.remove(b)
+        
         return len(set(arr))
