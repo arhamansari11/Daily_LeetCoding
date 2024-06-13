@@ -3,7 +3,7 @@ class Solution:
         moves = 0
         seats.sort()
         students.sort()
-        for i in range(len(students)):
-            moves += abs(students[i]-seats[i])
+        for i in range(len(seats)):
+            moves += abs(students[i] - seats[i])
 
         return moves
