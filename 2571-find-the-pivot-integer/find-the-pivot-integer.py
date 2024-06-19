@@ -10,7 +10,7 @@ class Solution:
         leftsum = 0
         for i in range(len(arr)):
             if leftsum == (total_sum - leftsum - arr[i]):
-                return i + 1
+                return arr[i]
             
             leftsum += arr[i]
 
