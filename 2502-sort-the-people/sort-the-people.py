@@ -3,7 +3,7 @@ class Solution:
         name = list(zip(names , heights ))
 
         for i in range(len(name)):
-            for j in range(0 , len(name) -i -1 ):
+            for j in range(0 , len(name) -1):
                 if name[j][1] < name[j+1][1]:
                     name[j] , name[j+1] = name[j+1] , name[j]
         
