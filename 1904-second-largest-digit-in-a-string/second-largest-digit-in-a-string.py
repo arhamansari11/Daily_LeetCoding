@@ -12,4 +12,4 @@ class Solution:
             return list1[-2]
         
         return -1
-        
+
