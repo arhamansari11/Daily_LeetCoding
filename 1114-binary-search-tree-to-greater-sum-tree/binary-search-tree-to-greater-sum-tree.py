@@ -8,14 +8,12 @@ class Solution:
     def bstToGst(self, root: TreeNode) -> TreeNode:
         add = 0
         def helper(node):
-            nonlocal add
             if node == None:
-                return 
+                return
+            nonlocal add
             helper(node.right)
             add += node.val
             node.val = add
             helper(node.left)
         helper(root)
-
         return root
-            
