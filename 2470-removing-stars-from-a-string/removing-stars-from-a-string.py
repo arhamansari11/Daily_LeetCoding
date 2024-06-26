@@ -9,4 +9,3 @@ class Solution:
                 stack.append(i)
 
         return "".join(stack)
-        
