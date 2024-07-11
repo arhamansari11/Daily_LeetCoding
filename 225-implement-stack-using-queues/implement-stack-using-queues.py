@@ -7,9 +7,9 @@ class MyStack:
         self.queue.append(x)
 
     def pop(self) -> int:
-        for i in range(len(self.queue) - 1):
-            self.queue.append(self.queue.popleft())
-        return self.queue.popleft()
+        # for i in range(len(self.queue) - 1):
+            # self.queue.append(self.queue.popr())
+        return self.queue.pop()
 
     def top(self) -> int:
         return self.queue[-1]
