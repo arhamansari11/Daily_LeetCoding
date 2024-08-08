@@ -1,9 +1,11 @@
 class Solution:
     def numberGame(self, nums: List[int]) -> List[int]:
         nums.sort()
-        i = 0
-        while i < len(nums):
-            nums[i] , nums[i+1] = nums[i+1] , nums[i]
-            i += 2
+        arr = []
+        while nums:
+            alice = nums.pop(0)
+            bob = nums.pop(0)
+            arr.append(bob)
+            arr.append(alice)
 
-        return nums
+        return arr
