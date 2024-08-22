@@ -3,8 +3,6 @@ class Solution:
         ans = []
 
         for i in range(len(nums)):
-            x = nums[i]
-            desire_ans = nums[x]
-            ans.append(desire_ans)
+            ans.append(nums[nums[i]])
 
         return ans
