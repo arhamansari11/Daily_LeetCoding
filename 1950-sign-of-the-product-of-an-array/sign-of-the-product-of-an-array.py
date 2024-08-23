@@ -1,12 +1,12 @@
-import math
 class Solution:
     def arraySign(self, nums: List[int]) -> int:
-        ans = math.prod(nums)
+        mult = 1
+        for i in nums:
+            mult = mult * i
 
-        if ans > 0:
+        if mult >= 1:
             return 1
-        elif ans < 0:
+        elif mult < 0:
             return -1
         else:
             return 0
-
