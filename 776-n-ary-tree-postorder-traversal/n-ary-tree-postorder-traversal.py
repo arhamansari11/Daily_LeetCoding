@@ -8,12 +8,11 @@
 
 class Solution:
     def postorder(self, root: 'Node') -> List[int]:
-        arr = []  # This list will store the result of the postorder traversal
+        arr = [] 
         
-        # Recursive function to perform postorder traversal
         def postorder(node):
-            if not node:  # Base case: if node is None, return
-                return
+            if not node: 
+                return None
             
             # Iterate over each child of the current node
             for child in node.children:
