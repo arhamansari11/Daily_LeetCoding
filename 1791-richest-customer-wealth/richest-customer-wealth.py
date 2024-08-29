@@ -1,10 +1,10 @@
 class Solution:
-    def maximumWealth(self, nums: List[List[int]]) -> int:
-        result = []
-        for i in range(len(nums)):
-            add = sum(nums[i])
-            result.append(add)
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        wealth = 0
 
-        maximum = max(result)
+        for i in range(len(accounts)):
+            addition = sum(accounts[i])
+            if wealth < addition:
+                wealth = addition
 
-        return maximum
+        return wealth
