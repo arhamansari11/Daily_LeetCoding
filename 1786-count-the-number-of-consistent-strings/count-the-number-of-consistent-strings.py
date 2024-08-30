@@ -15,6 +15,8 @@ class Solution:
 
         # return consistent
 
+        #  Optimize Solution
+        
         l =  list(allowed)
         c = 0
         for i in words:
