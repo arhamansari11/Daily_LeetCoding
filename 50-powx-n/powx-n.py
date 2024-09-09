@@ -1,5 +1,9 @@
-import math
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        power = math.pow(x,n)
-        return power
+        def power( x , n ):
+            if n == 0:
+                return 1
+            
+            return x ** n
+
+        return power( x  , n)
