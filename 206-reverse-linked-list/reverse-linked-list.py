@@ -5,21 +5,34 @@
 #         self.next = next
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        arr = []
+
+        # Brute Force Solution
+
+        # arr = []
+        # curr = head
+        
+        # while curr:
+        #     arr.append(curr.val)
+        #     curr = curr.next
+        
+        # arr.reverse()
+        
+        # current = head
+        # for i in range(len(arr)):
+        #     current.val = arr[i]
+        #     current = current.next
+        
+        # return head
+
+        #  Optimize Solution
+
+        prev = None
         curr = head
-        
-        # Collect values from the linked list into an array
         while curr:
-            arr.append(curr.val)
-            curr = curr.next
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        return prev
+
         
-        # Reverse the array with node values
-        arr.reverse()
-        
-        # Rebuild the linked list using the reversed values
-        current = head
-        for i in range(len(arr)):
-            current.val = arr[i]
-            current = current.next
-        
-        return head
