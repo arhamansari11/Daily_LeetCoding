@@ -2,12 +2,13 @@ class Solution:
     def reverseString(self, nums: List[str]) -> None:
         """
         Do not return anything, modify s in-place instead.
-        """
-        left = 0
-        right = len(nums) - 1
-        while left < right:
-            if nums[left] != nums[right]:
-                nums[left] , nums[right] = nums[right] , nums[left]
-            left += 1
-            right -= 1
-            
+        """ 
+        def Reverse(arr , l , r):
+            if l >= r:
+                return
+            else:
+                arr[l] , arr[r] = arr[r] , arr[l]
+                return Reverse(arr , l+1 , r-1)
+        l = 0
+        r = len(nums) - 1
+        return Reverse(nums , l , r )
