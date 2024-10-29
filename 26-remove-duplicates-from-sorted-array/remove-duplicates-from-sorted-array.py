@@ -5,8 +5,7 @@ class Solution:
         while r < len(nums):
             if nums[l] == nums[r]:
                 nums.pop(r)
+
             else:
                 l += 1
                 r += 1
-
-        
