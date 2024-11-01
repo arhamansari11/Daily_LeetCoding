@@ -2,7 +2,7 @@ class Solution:
     def makeFancyString(self, s: str) -> str:
         stack = []
         for i in s:
-            if len(stack) >= 2 and i == stack[-1] and i == stack[-2]:
+            if len(stack) >= 2 and stack[-1] == i and stack[-2] == i:
                 continue
             else:
                 stack.append(i)
