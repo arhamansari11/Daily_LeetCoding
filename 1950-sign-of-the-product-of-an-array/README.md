@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/sign-of-the-product-of-an-array">Sign of the Product of an Array</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>There is a function <code>signFunc(x)</code> that returns:</p>
+<h2><a href="https://leetcode.com/problems/sign-of-the-product-of-an-array">Sign of the Product of an Array</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Implement a function <code>signFunc(x)</code> that returns:</p>
 
 <ul>
 	<li><code>1</code> if <code>x</code> is positive.</li>
