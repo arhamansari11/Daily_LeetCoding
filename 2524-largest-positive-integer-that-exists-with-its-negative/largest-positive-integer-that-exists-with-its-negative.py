@@ -8,6 +8,8 @@ class Solution:
                 nums.remove(maximum)
                 if not nums:
                     return -1
+
                 maximum = max(nums)
 
-        return maximum
+        
+           
