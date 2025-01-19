@@ -6,10 +6,7 @@ class Solution:
                 return maximum
             else:
                 nums.remove(maximum)
-                if not nums:
-                    return -1
-
-                maximum = max(nums)
+        return -1
 
         
            
