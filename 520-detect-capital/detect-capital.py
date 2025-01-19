@@ -1,10 +1,10 @@
 class Solution:
-    def detectCapitalUse(self, word: str) -> bool:
-        if word.isupper():
+    def detectCapitalUse(self, words: str) -> bool:
+        if words.isupper():
             return True
-        elif word.islower():
+        elif words.islower():
             return True
-        elif word[0].isupper() and word[1:].islower():
+        elif words.istitle():
             return True
-        else :
+        else:
             return False
