@@ -1,7 +1,7 @@
 class Solution:
     def findMaxK(self, nums: List[int]) -> int:
-        maximum = max(nums)
         for i in range(len(nums)):
+            maximum = max(nums)
             if -maximum in nums:
                 return maximum
             else:
