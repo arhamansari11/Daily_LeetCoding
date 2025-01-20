@@ -1,9 +1,8 @@
 class Solution:
-    def multiply(self, num1: str, num2: str) -> str:
-        string1 = int(num1)
-        string2 = int(num2)
+    def multiply(self, nums1: str, nums2: str) -> str:
+        string1 = int(nums1)
+        string2 = int(nums2)
 
+        multiply = string1 * string2
 
-        mult = string1 * string2
-
-        return str(mult)
+        return str(multiply)
