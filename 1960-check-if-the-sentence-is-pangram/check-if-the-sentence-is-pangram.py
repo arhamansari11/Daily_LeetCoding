@@ -1,8 +1,11 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
-        x = set(sentence)
+        string  = "abcdefghijklmnopqrstuvwxyz"
 
-        if len(x) == 26:
-            return True
-        
-        return False
+        for i in string:
+            if i in sentence:
+                continue
+            else:
+                return False
+
+        return True
