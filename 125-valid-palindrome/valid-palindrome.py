@@ -2,7 +2,7 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         string = ""
         for i in s:
-            if i.isalpha() or i.isdigit():
+            if i.isalnum():
                 string += i.lower()
 
         if string == string[::-1]:
