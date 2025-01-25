@@ -1,12 +1,12 @@
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
-        seen = set()
-        double = set()
+        set1 =  set()
+        set2 = set()
 
-        for num in nums:
-            if num in seen:
-                double.add(num)
+        for i in nums:
+            if i in set1:
+                set2.add(i)
             else:
-                seen.add(num)
+                set1.add(i)
 
-        return list(double)
+        return list(set2)
