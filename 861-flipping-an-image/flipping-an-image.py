@@ -7,6 +7,5 @@ class Solution:
                     image[i][j] = 1
                 else:
                     image[i][j] = 0
-        return image
 
-        
+        return image
