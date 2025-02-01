@@ -9,5 +9,7 @@ class Solution:
                 elif stack[-1] == "C" and i == "D":
                     stack.pop()
                     continue
+    
             stack.append(i)
+
         return len(stack)
