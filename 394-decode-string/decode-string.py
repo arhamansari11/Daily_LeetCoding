@@ -9,14 +9,16 @@ class Solution:
                 while stack[-1].isalpha() == True:
                     x = stack.pop() + x
                 stack.pop()
-                n =""
+                n = ""
                 while stack and stack[-1].isdigit() == True:
                     n = stack.pop() + n
-                
+
                 if n == "":
                     n = 1
                 else:
                     n = int(n)
+
                 stack.append(x * n)
-        
+
         return "".join(stack)
+
