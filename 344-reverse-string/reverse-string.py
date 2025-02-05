@@ -3,6 +3,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        
         l = 0
         r = len(nums) - 1
         while l <= r:
