@@ -1,19 +1,14 @@
-from typing import List
-
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        
-        for i in range(len(nums2)):
-            nums1.append(nums2[i])
+        merge = nums1 + nums2
+        merge.sort()
 
-        nums1.sort()
-
-        length = len(nums1)
+        length = len(merge)
         mid = length // 2
 
-        if length % 2 == 0:  # If length is even
-            mid = (nums1[mid-1] + nums1[mid]) / 2
+        if length % 2 == 0:
+            mid = (merge[mid-1] + merge[mid]) / 2
         else:
-            mid = nums1[mid]
-        
+            mid = merge[mid]
+
         return mid
