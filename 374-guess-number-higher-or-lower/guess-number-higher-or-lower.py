@@ -11,9 +11,10 @@ class Solution:
         r = n
         while l <= r:
             mid = (l+r) // 2
-            if guess(mid) == 0:
+            guess_number = guess(mid)
+            if  guess_number == 0:
                 return mid
-            elif guess(mid) == 1:
+            elif guess_number == 1:
                 l = mid + 1
             else:
                 r = mid - 1
