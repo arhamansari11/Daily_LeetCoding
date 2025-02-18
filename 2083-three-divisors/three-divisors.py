@@ -1,14 +1,13 @@
 class Solution:
     def isThree(self, n: int) -> bool:
-        divisors = 0
         i = 1
+        count = 0
         while i <= n:
             if n % i == 0:
-                divisors += 1
-
+                count += 1
             i += 1
 
-        if divisors == 3:
+        if count == 3:
             return True
         else:
             return False
