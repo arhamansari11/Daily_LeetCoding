@@ -1,29 +1,33 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        prev = None
+
+        previous = None
         curr = head
-        
-        # Reverse the linked list
         while curr:
             nxt = curr.next
-            curr.next = prev
-            prev = curr
+            curr.next = previous
+            previous = curr
             curr = nxt
+
         
-        # Remove the N-th node from the end
         dummy = ListNode(0)
-        dummy.next = prev
+        dummy.next = previous
         current = dummy
         i = 0
-        
+
         while current.next:
             i += 1
             if i == n:
                 current.next = current.next.next
                 break
             current = current.next
-        
-        # Reverse the list back to original order
+
+
         previ = None
         curri = dummy.next
         while curri:
@@ -31,5 +35,30 @@ class Solution:
             curri.next = previ
             previ = curri
             curri = nxt
-        
+
         return previ
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        # How to find the Length of the Linked List
+
+        # length = 0
+        # curr = head
+        # while curr:
+        #     length  += 1
+        #     curr = curr.next
+
+
+        # print(length)
