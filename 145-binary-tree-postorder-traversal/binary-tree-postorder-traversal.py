@@ -10,9 +10,10 @@ class Solution:
         def postorder(node):
             if not node:
                 return None
+
             postorder(node.left)
             postorder(node.right)
             arr.append(node.val)
+
         postorder(root)
         return arr
-        
