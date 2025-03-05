@@ -13,6 +13,6 @@ class Solution:
             inorder(node.left)
             arr.append(node.val)
             inorder(node.right)
-        
+
         inorder(root)
         return arr
