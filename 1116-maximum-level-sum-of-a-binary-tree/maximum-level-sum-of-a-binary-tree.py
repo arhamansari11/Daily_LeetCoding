@@ -9,9 +9,9 @@ class Solution:
     def maxLevelSum(self, root: Optional[TreeNode]) -> int:
         q = deque()
         q.append(root)
-        level_num = 1
-        res = 1 
-        max_sum = root.val
+        level = 1
+        level_track = 1
+        max_val = root.val
         while q:
             level_sum = 0
             for i in range(len(q)):
@@ -22,11 +22,11 @@ class Solution:
                         q.append(node.left)
                     if node.right:
                         q.append(node.right)
-            if level_sum > max_sum:
-                max_sum = level_sum
-                res = level_num
 
-            level_num += 1
+            if level_sum > max_val:
+                max_val = level_sum
+                level = level_track
 
-        return res
+            level_track += 1
 
+        return level
