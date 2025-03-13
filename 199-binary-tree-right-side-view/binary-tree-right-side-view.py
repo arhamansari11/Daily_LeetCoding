@@ -11,7 +11,7 @@ class Solution:
         right_side = []
         while q:
             level = []
-            for i in range(len(q)):
+            for _ in range(len(q)):
                 node = q.popleft()
                 if node:
                     level.append(node.val)
