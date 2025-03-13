@@ -18,9 +18,9 @@ class Solution:
                         q.append(node.left)
                     if node.right:
                         q.append(node.right)
+
         level.sort()
         if k > len(level):
             return 0
         
         return level[k-1]
-        
