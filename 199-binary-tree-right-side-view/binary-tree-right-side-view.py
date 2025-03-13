@@ -7,11 +7,11 @@
 from collections import deque
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        q = deque([root])
-        right_side_view = []
+        q = deque([root])        
+        right_side = []
         while q:
             level = []
-            for _ in range(len(q)):
+            for i in range(len(q)):
                 node = q.popleft()
                 if node:
                     level.append(node.val)
@@ -21,9 +21,8 @@ class Solution:
                         q.append(node.right)
 
             if len(level) > 1:
-                right_side_view.append(level[-1])
+                right_side.append(level[-1])
             elif len(level) == 1:
-                right_side_view.append(level[0])
+                right_side.append(level[0])
 
-
-        return right_side_view
+        return right_side
