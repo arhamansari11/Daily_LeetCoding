@@ -12,4 +12,5 @@ class Solution:
 
             return 1 + dfs(node.left) + dfs(node.right)
 
+
         return dfs(root)
