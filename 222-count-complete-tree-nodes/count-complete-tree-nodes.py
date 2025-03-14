@@ -10,7 +10,7 @@ class Solution:
         q = deque([root])
         count = 0
         while q:
-            for i in range(len(q)):
+            for _ in range(len(q)):
                 node = q.popleft()
                 if node:
                     count += 1
