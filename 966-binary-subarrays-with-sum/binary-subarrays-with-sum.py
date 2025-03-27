@@ -3,7 +3,9 @@ class Solution:
         def helper(x):
             if x < 0:
                 return 0
-            res = l = cur = 0
+            res = 0
+            l = 0
+            cur = 0
             for r in range(len(nums)):
                 cur += nums[r]
                 while cur > x:
