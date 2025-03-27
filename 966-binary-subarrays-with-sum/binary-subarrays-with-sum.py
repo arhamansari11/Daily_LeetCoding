@@ -2,8 +2,7 @@ class Solution:
     def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
         def helper(x):
             if x < 0:
-                return 0
-            
+                return 0            
             l = 0
             current = 0
             result = 0
