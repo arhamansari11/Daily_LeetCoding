@@ -14,4 +14,3 @@ class Solution:
             else:
                 return "none"
 
-
