@@ -3,14 +3,13 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-
-        row = []
         col = []
+        row = []
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
                 if matrix[i][j] == 0:
-                    row.append(i)
                     col.append(j)
+                    row.append(i)
 
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
