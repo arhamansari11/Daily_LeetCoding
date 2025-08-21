@@ -3,4 +3,17 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        nums.sort()
+        # nums.sort()
+
+        i = 0
+        j = 1
+
+        while j < len(nums):
+            if nums[i] > nums[j]:
+                nums[i] , nums[j] = nums[j] , nums[i]
+                i = 0
+                j = 1
+            else:
+                i += 1
+                j += 1
+            
