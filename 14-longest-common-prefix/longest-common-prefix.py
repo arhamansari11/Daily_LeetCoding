@@ -9,4 +9,3 @@ class Solution:
                 prefix = prefix[:-1]
 
         return prefix
-            
